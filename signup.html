@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOFMUN - Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#fcf1eb] font-sans">
+    <!-- Same header as index.html -->
+    <header class="bg-[#fcf1eb] sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-[#B22222]">
+                    <img src="Pics/Screenshot 2025-08-25 211058.png" alt="VOFMUN Logo" class="h-8 w-8">
+                    <span>VOFMUN</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Home</a>
+                <div class="relative group">
+                    <a href="resources.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Conference Resources ▾</a>
+                    <div class="absolute hidden group-hover:block bg-[#fcf1eb] shadow-lg rounded-md py-2 w-48">
+                        <a href="resources.html#schedule" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Schedule</a>
+                        <a href="resources.html#committees" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Committees & Topics</a>
+                        <a href="resources.html#rules" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Rules & Procedures</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Sign Up</a>
+                <a href="founders.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Founding Members</a>
+            </nav>
+            <button class="md:hidden">
+                <svg class="w-6 h-6 text-[#B22222]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h1 class="text-3xl font-bold text-[#B22222] mb-8 text-center">Conference Registration</h1>
+            
+            <div class="bg-[#fcf1eb] border border-[#B22222] rounded-lg shadow-md p-8">
+                <form>
+                    <div class="grid md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label for="firstName" class="block text-gray-700 font-medium mb-2">First Name</label>
+                            <input type="text" id="firstName" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#B22222]">
+                        </div>
+                        <div>
+                            <label for="lastName" class="block text-gray-700 font-medium mb-2">Last Name</label>
+                            <input type="text" id="lastName" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#B22222]">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#B22222]">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#B22222]">
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+  <label class="block text-gray-700 font-medium mb-2">Committee Preference</label>
+  <div class="space-y-2">
+    
+    <label class="flex items-center justify-between">
+      <span>General Assembly (GA1)</span>
+      <input type="radio" name="committee" value="GA1"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+    <label class="flex items-center justify-between">
+      <span>UNODC (United Nations Office of Drugs and Crime) - Beginner</span>
+      <input type="radio" name="committee" value="UNODC"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+    <label class="flex items-center justify-between">
+      <span>ECOSOC (Economic and Social Council) - Medium</span>
+      <input type="radio" name="committee" value="ECOSOC"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+    <label class="flex items-center justify-between">
+      <span>WHO (World Health Organization) - Beginner</span>
+      <input type="radio" name="committee" value="WHO"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+    <label class="flex items-center justify-between">
+      <span>UNCSTD (UN Commission on Science and Technology for Development) - Advanced</span>
+      <input type="radio" name="committee" value="UNCSTD"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+    <label class="flex items-center justify-between">
+      <span>ICJ (International Court of Justice)</span>
+      <input type="radio" name="committee" value="ICJ"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+    <label class="flex items-center justify-between">
+      <span>ICRCC (International Cybersecurity Response Crisis Council)</span>
+      <input type="radio" name="committee" value="ICRCC"
+             class="w-6 h-6 accent-[#B22222] cursor-pointer">
+    </label>
+
+  </div>
+</div>
+
+
+                    
+                    <div class="mb-8">
+                        <label for="experience" class="block text-gray-700 font-medium mb-2">MUN Experience Level</label>
+                        <select id="experience" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#B22222]">
+                            <option value="" disabled selected>Select experience level</option>
+                            <option value="beginner">Beginner (0-1 conferences)</option>
+                            <option value="intermediate">Intermediate (2-4 conferences)</option>
+                            <option value="advanced">Advanced (5-7 conferences)</option>
+                            <option value="master">Master (8+ conferences)</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="mb-8">
+                        <label for="paymentProof" class="block text-gray-700 font-medium mb-2">Proof of Payment (screenshot or receipt)</label>
+                        <input type="file" id="paymentProof" accept="image/*" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#B22222]">
+                    </div>
+
+                    <div class="mb-8">
+                        <label for="comments" class="block text-gray-700 font-medium mb-2">Special Requests/Comments</label>
+                        <textarea id="comments" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#B22222]"></textarea>
+                    </div>
+                    
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-[#B22222] hover:bg-[#D32F2F] text-white px-8 py-3 rounded-lg font-medium transition">Submit Registration</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <footer class="bg-[#B22222] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">VOFMUN</h3>
+                    <p>contact@vofmun.org</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/company/vofmun/" class="hover:opacity-70 transition" aria-label="LinkedIn">
+                        <img src="Pics/LinkedIn-removebg-preview.png" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="https://instagram.com/vofmun" class="hover:opacity-70 transition" aria-label="Instagram">
+                        <img src="Pics/Insta-removebg-preview.png" alt="Instagram" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p>&copy; 2025 VOFMUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Convert uploaded image to Base64
+async function toBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+  });
+}
+
+// Handle form submission
+document.querySelector("form").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const form = e.target;
+
+  // Handle file upload
+  let paymentProof = "";
+  const fileInput = document.getElementById("paymentProof");
+  if (fileInput && fileInput.files.length > 0) {
+    paymentProof = await toBase64(fileInput.files[0]);
+  }
+
+  // Collect form data
+  const formData = {
+    firstName: document.getElementById("firstName").value,
+    lastName: document.getElementById("lastName").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    committee: document.querySelector("input[name='committee']:checked")?.value || "",
+    experience: document.getElementById("experience").value,
+    comments: document.getElementById("comments").value,
+    paymentProof: paymentProof, // 🖼️ Base64 image string
+  };
+
+  alert("✅ Registration submitted!");
+
+    form.reset();
+
+  await fetch("https://script.google.com/macros/s/AKfycbxUSWistH6Vak22hv_2OmX_JR_N_OxUNiXC71GqvxbIhjKhwfWoXKR89pp-A3_EPUeh/exec", {
+    method: "POST",
+    body: JSON.stringify(formData),
+  });
+});
+</script>
+
+</body>
+</html> 

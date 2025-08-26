@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOFMUN - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#fcf1eb] font-sans">
+    <!-- Header with Navbar -->
+    <header class="bg-[#fcf1eb] sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-[#B22222]">
+                    <img src="Pics/Screenshot 2025-08-25 211058.png" alt="VOFMUN Logo" class="h-8 w-8">
+                    <span>VOFMUN</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Home</a>
+                <div class="relative group">
+                    <a href="resources.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Conference Resources ▾</a>
+                    <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-md py-2 w-48">
+                        <a href="resources.html#schedule" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Schedule</a>
+                        <a href="resources.html#committees" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Committees & Topics</a>
+                        <a href="resources.html#rules" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Rules & Procedures</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Sign Up</a>
+                <a href="founders.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Founding Members</a>
+            </nav>
+            <button class="md:hidden">
+                <svg class="w-6 h-6 text-[#B22222]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <div class="absolute inset-0 bg-[#fcf1eb]">
+            <div class="absolute top-0 left-0 w-full h-32 bg-[#B22222] transform -skew-y-3 origin-top-left"></div>
+        </div>
+        <div class="container mx-auto px-4 py-32 relative z-10 text-center">
+            <h1 class="text-5xl font-bold text-[#B22222] mb-4">Voices of the Future Model</h1>
+            <h1 class="text-5xl font-bold text-[#B22222] mb-4">Model United Nations I</h1>
+            <p class="text-xl text-gray-700 mb-2">Debate Diplomacy Difference</p>
+        </div>
+    </section>
+
+
+    <section class="pt-8 pb-20 bg-[#fcf1eb]">
+        <div class="container mx-auto px-4 max-w-3xl text-center">
+            <h2 class="text-3xl font-bold text-[#B22222] mb-6">About VOFMUN</h2>
+            <p class="text-lg text-gray-700 mb-8">
+                VOFMUN is a youth-driven platform bringing together tomorrow's leaders to debate, collaborate, 
+                and create solutions for global challenges. Our mission is to foster diplomacy, critical thinking, 
+                and global awareness among young minds.
+            </p>
+            <div class="flex justify-center space-x-4">
+    <a href="signup.html" class="bg-[#B22222] hover:bg-[#D32F2F] text-white px-6 py-3 rounded-lg font-medium transition">Register Now</a>
+</div>
+
+<section class="py-20 bg-[#fcf1eb]">
+    <div class="container mx-auto px-4">
+      <div class="relative">
+
+        <!-- Left Arrow -->
+        <button id="prevBtn" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#B22222] text-white p-3 rounded-full shadow-lg hover:bg-[#D32F2F] z-10">
+          &#10094;
+        </button>
+
+        <!-- Carousel Wrapper -->
+        <div class="overflow-hidden">
+          <div id="carouselTrack" class="flex transition-transform duration-500 space-x-6">
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Tala Swaidan SG.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+            
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Clyde Jared RObis Dsg.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Aryan Shah Head of DGA.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Vihaan Shulka head of Committtees.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Muhammad Talha Dep Head of Committees.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/3 (1).png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Reem Ghanayem Dep Head of Logistics.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Gabrielle Zeitsman Dep head of Logistics.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Ammiel Head of Media and Marketing.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Farah Yu Dep Head of Media and Marketing.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+
+            <a href="founders.html" class="flex-shrink-0 w-2/3 md:w-1/2 lg:w-1/3">
+              <img src="Pics/Noya Fareed Dep Head of Media and Marketing.png" alt="Image 1" class="rounded-2xl shadow-lg cursor-pointer object-cover h-64 w-full">
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Arrow -->
+        <button id="nextBtn" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#B22222] text-white p-3 rounded-full shadow-lg hover:bg-[#D32F2F] z-10">
+          &#10095;
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const track = document.getElementById('carouselTrack');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let index = 0;
+
+    function updateCarousel() {
+      const slideWidth = track.children[0].getBoundingClientRect().width + 24; // image width + gap (space-x-6 = 1.5rem = 24px)
+      track.style.transform = `translateX(${-index * slideWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      index = (index + 1) % track.children.length; // loop forward
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      index = (index - 1 + track.children.length) % track.children.length; // loop backward
+      updateCarousel();
+    });
+  </script>
+
+<!-- Added margin-top here -->
+<div class="bg-[#B22222] text-white p-6 rounded-lg mt-8">
+    <h3 class="text-2xl font-bold mb-2">Conference begins in</h3>
+    <div id="countdown" class="text-4xl font-bold">24 Days 12 Hours 30 Minutes</div>
+</div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#B22222] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">VOFMUN (In Partnership with SODMUN)</h3>
+                    <p>contact@vofmun.org</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/company/vofmun/" class="hover:opacity-70 transition" aria-label="LinkedIn">
+                        <img src="Pics/LinkedIn-removebg-preview.png" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="https://instagram.com/vofmun" class="hover:opacity-70 transition" aria-label="Instagram">
+                        <img src="Pics/Insta-removebg-preview.png" alt="Instagram" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p>&copy; 2025 VOFMUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

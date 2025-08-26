@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOFMUN - Conference Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#fcf1eb] font-sans">
+    <!-- Same header as index.html -->
+    <header class="bg-[#fcf1eb] sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-[#B22222]">
+                    <img src="Pics/Screenshot 2025-08-25 211058.png" alt="VOFMUN Logo" class="h-8 w-8">
+                    <span>VOFMUN</span>
+                </a>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Home</a>
+                <div class="relative group">
+                    <a href="resources.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Conference Resources ▾</a>
+                    <div class="absolute hidden group-hover:block bg-[#fcf1eb] shadow-lg rounded-md py-2 w-48">
+                        <a href="resources.html#schedule" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Schedule</a>
+                        <a href="resources.html#committees" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Committees & Topics</a>
+                        <a href="resources.html#rules" class="block px-4 py-2 hover:bg-gray-100 text-[#B22222]">Rules & Procedures</a>
+                    </div>
+                </div>
+                <a href="signup.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Sign Up</a>
+                <a href="founders.html" class="text-[#B22222] font-medium hover:text-[#D32F2F]">Founding Members</a>
+            </nav>
+            <button class="md:hidden">
+                <svg class="w-6 h-6 text-[#B22222]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-[#B22222] mb-8 text-center">Conference Resources</h1>
+            
+            <!-- Schedule Section -->
+            <section id="schedule" class="mb-16">
+                <h2 class="text-2xl font-bold text-[#B22222] mb-6 border-b-2 border-[#B22222] pb-2">Conference Schedule</h2>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-[#fcf1eb] border border-gray-200">
+                        <thead class="bg-[#B22222] text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Day</th>
+                                <th class="py-3 px-4 text-left">Time</th>
+                                <th class="py-3 px-4 text-left">Event</th>
+                                <th class="py-3 px-4 text-left">Location</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-gray-200 hover:bg-gray-50">
+                                <td class="py-3 px-4">Day 1</td>
+                                <td class="py-3 px-4">9:00 AM - 10:00 AM</td>
+                                <td class="py-3 px-4">Registration</td>
+                                <td class="py-3 px-4">Main Hall</td>
+                            </tr>
+                            <!-- More schedule rows -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Committees Section -->
+            <section id="committees" class="mb-16">
+                <h2 class="text-2xl font-bold text-[#B22222] mb-6 border-b-2 border-[#B22222] pb-2">Committees & Topics</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    
+    <!-- Card 1 -->
+    <div class="bg-[#fcf1eb] border border-[#B22222] rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-[#B22222] mb-2">General Assembly</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li class="text-gray-700">Addressing the Increasing Militarisation of Outer Space and the Need for International Regulation</li>
+          <li class="text-gray-700">Regulating the Use of Artificial Intelligence and the Extent of Human Accountability in Cyber-Warfare</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="bg-[#fcf1eb] border border-[#B22222] rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-[#B22222] mb-2">UNODC</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li class="text-gray-700">Strengthening the Role of Technology and International Law in Combatting Drug Cartels and Preventing Illegal Border Crossings</li>
+          <li class="text-gray-700">Combatting the Proliferation of Cryptocurrencies as a Tool for Money Laundering by Transnational Crime Syndicates</li>
+        </ol>
+      </div>
+    </div>
+
+        <!-- Card 3 -->
+    <div class="bg-[#fcf1eb] border border-[#B22222] rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-[#B22222] mb-2">ECOSOC</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li class="text-gray-700">Reforming Global Supply Chains to Enhance Economic Resilience and Reduce Trade Disruptions</li>
+          <li class="text-gray-700">Addressing the Economic Impacts of Artificial Intelligence on Employment and Global Labour Markets</li>
+        </ol>
+      </div>
+    </div>
+
+        <!-- Card 4 -->
+    <div class="bg-[#fcf1eb] border border-[#B22222] rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-[#B22222] mb-2">WHO</h3>
+        <ol class="list-decimal list-inside space-y-2">
+          <li class="text-gray-700">Strengthening Global Vaccine Equity and Preparedness for Emerging Infectious Diseases</li>
+          <li class="text-gray-700">Addressing Algorithmic Bias in Healthcare Diagnostics Through the Use of Emerging Technologies</li>
+        </ol>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+            <!-- Rules Section -->
+            <section id="rules" class="mb-16">
+                <h2 class="text-2xl font-bold text-[#B22222] mb-6 border-b-2 border-[#B22222] pb-2">Rules & Procedures</h2>
+                <div class="bg-[#fcf1eb] border border-[#B22222] rounded-lg p-6">
+                    <h3 class="text-xl font-bold text-[#B22222] mb-4">Conference Rules</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>All delegates must adhere to formal parliamentary procedure</li>
+                        <li>Proper business attire is required for all sessions</li>
+                        <!-- More rules -->
+                    </ul>
+                    <div class="mt-6">
+                        <a href="#" class="inline-block bg-[#B22222] hover:bg-[#D32F2F] text-white px-4 py-2 rounded transition">Download Full Rules PDF</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Same footer as index.html -->
+    <footer class="bg-[#B22222] text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2">VOFMUN</h3>
+                    <p>contact@vofmun.org</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/company/vofmun/" class="hover:opacity-70 transition" aria-label="LinkedIn">
+                        <img src="Pics/LinkedIn-removebg-preview.png" alt="LinkedIn" class="h-6 w-6">
+                    </a>
+                    <a href="https://instagram.com/vofmun" class="hover:opacity-70 transition" aria-label="Instagram">
+                        <img src="Pics/Insta-removebg-preview.png" alt="Instagram" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p>&copy; 2025 VOFMUN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
